@@ -1,0 +1,1668 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Bó Hoa Hồng 20/10 — Dành Tặng Người Con Gái Anh Thương</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts nghệ thuật -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,400;1,600&family=Dancing+Script:wght@600;700&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <style>
+        :root {
+            --bg-deep: #0f0207;
+            --gold-light: #fdf0bc;
+            --gold-mid: #e5b84b;
+            --rose-glow: #ff3b6b;
+        }
+
+        * {
+            user-select: none;
+            -webkit-user-select: none;
+            box-sizing: border-box;
+            -webkit-tap-highlight-color: transparent;
+        }
+
+        body, html {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100%;
+            overflow-x: hidden;
+            background: radial-gradient(circle at 50% 44%, #36081a 0%, #19030c 55%, #090104 100%);
+            color: #fff6f8;
+            font-family: 'Plus Jakarta Sans', sans-serif;
+        }
+
+        .font-display { font-family: 'Playfair Display', serif; }
+        .font-serif-art { font-family: 'Cormorant Garamond', serif; }
+        .font-script { font-family: 'Dancing Script', cursive; }
+
+        .glass-panel {
+            background: rgba(28, 4, 14, 0.88);
+            backdrop-filter: blur(22px);
+            -webkit-backdrop-filter: blur(22px);
+            border: 1px solid rgba(253, 240, 188, 0.32);
+            box-shadow: 0 25px 65px rgba(0, 0, 0, 0.8), 0 0 35px rgba(255, 59, 107, 0.16), inset 0 1px 1px rgba(255, 255, 255, 0.16);
+        }
+
+        .glass-pill {
+            background: rgba(26, 4, 13, 0.72);
+            backdrop-filter: blur(14px);
+            -webkit-backdrop-filter: blur(14px);
+            border: 1px solid rgba(253, 240, 188, 0.28);
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.45);
+            transition: all 0.3s cubic-bezier(0.22, 1, 0.36, 1);
+        }
+
+        .btn-couture {
+            background: linear-gradient(135deg, rgba(255, 59, 107, 0.55) 0%, rgba(138, 12, 52, 0.85) 100%);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(253, 240, 188, 0.52);
+            box-shadow: 0 10px 30px rgba(255, 42, 109, 0.35), inset 0 1px 1px rgba(255, 255, 255, 0.28);
+            transition: all 0.35s cubic-bezier(0.22, 1, 0.36, 1);
+        }
+
+        .btn-couture:hover {
+            transform: translateY(-2px) scale(1.02);
+            border-color: rgba(253, 240, 188, 0.95);
+            box-shadow: 0 14px 36px rgba(255, 42, 109, 0.52), 0 0 20px rgba(253, 240, 188, 0.35);
+        }
+
+        .gold-shimmer {
+            background: linear-gradient(90deg, #fce8a6 0%, #e5b84b 25%, #fff9e6 50%, #d4a137 75%, #fce8a6 100%);
+            background-size: 200% auto;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            animation: goldFlow 5.5s linear infinite;
+        }
+
+        @keyframes goldFlow {
+            to { background-position: 200% center; }
+        }
+
+        #bouquetStageWrapper {
+            transition: transform 1.8s cubic-bezier(0.22, 1, 0.36, 1), filter 1.8s ease, opacity 1.5s ease;
+        }
+
+        .stage-locked {
+            transform: scale(0.86) translateY(28px);
+            filter: brightness(0.35) saturate(0.65) blur(3px);
+            opacity: 0.45;
+        }
+
+        .stage-unlocked {
+            transform: scale(1) translateY(0px);
+            filter: brightness(1) saturate(1.05) drop-shadow(0 22px 50px rgba(255, 30, 90, 0.28));
+            opacity: 1;
+        }
+
+        .bouquet-backlight {
+            background: radial-gradient(circle, rgba(255, 59, 107, 0.28) 0%, rgba(253, 240, 188, 0.12) 42%, transparent 72%);
+            filter: blur(40px);
+            animation: auraBreath 6s ease-in-out infinite;
+        }
+
+        @keyframes auraBreath {
+            0%, 100% { transform: scale(0.94); opacity: 0.72; }
+            50% { transform: scale(1.08); opacity: 1; }
+        }
+
+        #roseHoverTooltip {
+            pointer-events: none;
+            transition: opacity 0.2s ease, transform 0.2s ease;
+        }
+
+        .rose-quick-pill {
+            transition: all 0.3s cubic-bezier(0.22, 1, 0.36, 1);
+        }
+        .rose-quick-pill.visited {
+            border-color: rgba(253, 240, 188, 0.85);
+            background: linear-gradient(135deg, rgba(255, 59, 107, 0.38), rgba(88, 10, 36, 0.85));
+            box-shadow: 0 0 14px rgba(253, 240, 188, 0.35);
+        }
+
+        .typing-cursor::after {
+            content: '|';
+            color: #fdf0bc;
+            animation: blinkCursor 0.8s step-end infinite;
+        }
+        @keyframes blinkCursor {
+            50% { opacity: 0; }
+        }
+
+        ::-webkit-scrollbar { width: 5px; height: 5px; }
+        ::-webkit-scrollbar-track { background: rgba(20, 3, 10, 0.3); }
+        ::-webkit-scrollbar-thumb { background: rgba(253, 240, 188, 0.35); border-radius: 999px; }
+    </style>
+</head>
+<body class="relative min-h-screen flex flex-col justify-between overflow-x-hidden select-none">
+
+    <canvas id="ambientCanvas" class="fixed inset-0 pointer-events-none z-10"></canvas>
+
+    <div id="roseHoverTooltip" class="fixed z-30 opacity-0 px-3.5 py-1.5 rounded-full glass-panel text-xs font-medium text-amber-100 flex items-center gap-1.5 shadow-xl">
+        <span id="tooltipIcon">🌹</span>
+        <span id="tooltipText">Đóa Hồng Tình Yêu</span>
+    </div>
+
+    <!-- MÀN HÌNH MỞ ĐẦU -->
+    <div id="introOverlay" class="fixed inset-0 z-50 flex flex-col items-center justify-center px-5 text-center transition-all duration-1000 bg-[#0c0106]/95 backdrop-blur-2xl">
+        <div class="relative mb-6 flex items-center justify-center">
+            <div class="w-40 h-40 rounded-full bg-rose-500/25 blur-2xl absolute animate-pulse"></div>
+            <div class="relative w-28 h-28 rounded-full glass-pill flex items-center justify-center border border-amber-200/45 shadow-[0_0_45px_rgba(255,59,107,0.45)]">
+                <canvas id="introSealCanvas" width="110" height="110" class="w-20 h-20"></canvas>
+            </div>
+        </div>
+
+        <span class="px-4 py-1.5 rounded-full glass-pill text-[11px] sm:text-xs uppercase tracking-[0.28em] text-amber-200/90 mb-3">
+             20 Tháng 10
+        </span>
+
+        <h1 class="font-display text-3xl sm:text-5xl md:text-6xl font-bold gold-shimmer mb-4 leading-tight max-w-2xl">
+            Một Bó Hoa Dành Riêng Cho <span class="recipient-name-display">Em Yêu</span>
+        </h1>
+
+        <p class="max-w-md text-sm sm:text-base text-rose-100/80 font-light mb-8 leading-relaxed">
+            Từng cánh hồng nhung, hồng phấn và hồng kem Champagne trong bó hoa này được kết lại từ những lời chúc dịu dàng nhất anh dành tặng em ngày 20/10.
+        </p>
+
+        <button id="unveilBouquetBtn" class="btn-couture px-8 py-4 rounded-full text-amber-50 font-medium text-sm sm:text-base tracking-wide flex items-center gap-3 group">
+            <span class="text-xl group-hover:scale-125 transition-transform"></span>
+            <span>Clickk dii </span>
+            <span class="text-lg group-hover:translate-x-1 transition-transform"></span>
+        </button>
+    </div>
+
+    <!-- THANH HEADER -->
+    <header class="relative z-30 w-full max-w-6xl mx-auto px-4 pt-3 sm:pt-4 flex items-center justify-between gap-2">
+        <div class="glass-pill px-3.5 py-2 rounded-full flex items-center gap-2.5">
+            <span class="w-2 h-2 rounded-full bg-rose-400 animate-ping"></span>
+            <span class="text-xs sm:text-sm font-medium text-amber-100/95 truncate max-w-[160px] sm:max-w-xs">
+                20/10 • Gửi <strong class="recipient-name-display text-rose-300 font-semibold">Em Yêu</strong>
+            </span>
+        </div>
+
+        <div class="flex items-center gap-2 sm:gap-2.5">
+            <button id="musicToggleBtn" class="glass-pill px-3 py-2 rounded-full flex items-center gap-1.5 text-xs sm:text-sm text-amber-100 hover:border-amber-300/70" title="Bật/Tắt giai điệu Piano">
+                <span id="musicIcon" class="text-sm sm:text-base">🎵</span>
+                <span id="musicStatusText" class="hidden md:inline text-xs">Giai Điệu: Bật</span>
+            </button>
+
+            <button id="openLetterBtn" class="btn-couture px-3.5 py-2 rounded-full flex items-center gap-1.5 text-xs sm:text-sm text-amber-50 font-medium">
+                <span>💌</span>
+                <span>Thư Bí Ẩn</span>
+            </button>
+
+            <button id="openSettingsBtn" class="glass-pill p-2 sm:p-2.5 rounded-full text-amber-200 hover:text-white hover:border-amber-300/70" title="Tùy chỉnh tên & lời chúc">
+                <svg class="w-4 h-4 sm:w-5 sm:h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z"></path>
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                </svg>
+            </button>
+        </div>
+    </header>
+
+    <!-- TRUNG TÂM: BÓ HOA -->
+    <main class="relative z-20 flex-1 flex flex-col items-center justify-center px-2 py-1">
+        <div class="text-center mb-0.5 pointer-events-none">
+            <h2 class="font-script text-2xl sm:text-4xl text-rose-200 drop-shadow-[0_2px_12px_rgba(255,59,107,0.55)]">
+                Bó Hoa Của Tình Yêu & Những Điều Dịu Dàng Nhất
+            </h2>
+            <p class="text-[11px] sm:text-xs text-amber-200/80 tracking-wide">
+                ✨ Chạm trực tiếp vào <strong class="text-rose-300">7 đóa hồng đang nở rộ</strong> hoặc <strong class="text-amber-200">thẻ bài mạ vàng trên nơ</strong> ✨
+            </p>
+        </div>
+
+        <div id="bouquetStageWrapper" class="stage-locked relative w-[350px] h-[400px] sm:w-[490px] sm:h-[530px] md:w-[540px] md:h-[570px] flex items-center justify-center">
+            <div class="bouquet-backlight absolute inset-8 rounded-full pointer-events-none"></div>
+            <canvas id="bouquetMasterCanvas" class="w-full h-full cursor-pointer select-none"></canvas>
+        </div>
+
+        <div class="w-full max-w-2xl mx-auto mt-1 px-2 flex flex-col items-center gap-2">
+            <div id="quickRoseBar" class="flex flex-wrap items-center justify-center gap-1.5 sm:gap-2"></div>
+            <div class="text-[11px] sm:text-xs text-amber-100/80 flex items-center gap-2">
+                <span id="wishProgressCounter" class="text-amber-200 font-medium">Đã khám phá 0/7 đóa hồng lời chúc</span>
+                <span>•</span>
+                <span id="wishProgressIndicator" class="text-rose-300 font-bold">0%</span>
+            </div>
+        </div>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="relative z-20 w-full text-center pb-2.5 pt-1 px-4 text-[11px] sm:text-xs text-rose-200/65 flex flex-wrap items-center justify-center gap-x-2">
+        <span>Chúc mừng ngày Phụ nữ Việt Nam 20/10</span>
+    </footer>
+
+    <!-- MODAL 1: THIỆP LỜI CHÚC TỪNG ĐÓA HỒNG -->
+    <div id="wishModal" class="fixed inset-0 z-40 hidden items-center justify-center p-4 bg-black/75 backdrop-blur-md opacity-0 transition-opacity duration-300">
+        <div id="wishModalCard" class="glass-panel relative w-full max-w-md rounded-3xl p-6 sm:p-8 text-center transform scale-90 transition-transform duration-300">
+            <!-- Nút X đóng Modal Đóa Hoa -->
+            <button id="closeWishModalBtn" class="cursor-pointer absolute top-4 right-4 w-9 h-9 rounded-full bg-rose-950/80 border border-amber-200/40 flex items-center justify-center text-amber-200 hover:bg-rose-800/80 hover:text-white transition z-50">
+                ✕
+            </button>
+
+            <div class="w-20 h-20 mx-auto mb-2.5 rounded-full bg-gradient-to-br from-rose-500/25 to-amber-500/15 border border-amber-200/45 flex items-center justify-center shadow-[0_0_30px_rgba(255,59,107,0.4)]">
+                <canvas id="miniRosePreviewCanvas" width="80" height="80" class="w-16 h-16"></canvas>
+            </div>
+
+            <p id="wishModalVariety" class="text-[11px] uppercase tracking-[0.26em] text-amber-200/85 mb-1">
+                Red Naomi Velvet Rose • Đóa Số 1
+            </p>
+            <h3 id="wishModalTitle" class="font-display text-2xl sm:text-3xl font-bold gold-shimmer mb-4">
+                Tình Yêu Dịu Dàng
+            </h3>
+
+            <div class="relative py-4 px-5 rounded-2xl bg-rose-950/50 border border-rose-300/20 mb-6 shadow-inner">
+                <p id="wishModalMessage" class="font-serif-art text-base sm:text-lg text-rose-50/95 leading-relaxed italic">
+                    "Cảm ơn em đã đến bên anh..."
+                </p>
+            </div>
+
+            <div class="flex items-center justify-between gap-2">
+                <button id="prevWishBtn" class="px-3.5 py-2.5 rounded-full text-xs sm:text-sm border border-amber-200/30 text-amber-100 hover:bg-rose-900/50 transition">
+                    ← Đóa trước
+                </button>
+                <button id="openLetterFromWishBtn" class="px-4 py-2.5 rounded-full text-xs sm:text-sm btn-couture text-amber-50 font-medium">
+                    Mở Bức Thư 💌
+                </button>
+                <button id="nextWishBtn" class="px-3.5 py-2.5 rounded-full text-xs sm:text-sm border border-amber-200/30 text-amber-100 hover:bg-rose-900/50 transition">
+                    Đóa tiếp →
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- MODAL 2: BỨC TÂM THƯ 20/10 -->
+    <div id="letterModal" class="fixed inset-0 z-40 hidden items-center justify-center p-4 bg-black/80 backdrop-blur-md opacity-0 transition-opacity duration-300">
+        <div class="glass-panel relative w-full max-w-lg max-h-[88vh] flex flex-col rounded-3xl p-6 sm:p-8 border border-amber-200/45">
+            <!-- Nút X đóng Bức Tâm Thư (Đã sửa hoạt động nhạy và chắc chắn) -->
+            <button id="closeLetterModalBtn" class="cursor-pointer absolute top-4 right-4 w-9 h-9 rounded-full bg-rose-950/80 border border-amber-200/40 flex items-center justify-center text-amber-200 hover:bg-rose-800/80 hover:text-white transition z-50">
+                ✕
+            </button>
+
+            <div class="text-center border-b border-amber-200/20 pb-4 mb-4">
+                <span class="text-[11px] uppercase tracking-[0.28em] text-amber-200/80">Gửi Người Con Gái Anh Thương Nhất</span>
+                <h3 class="font-script text-3xl sm:text-4xl gold-shimmer mt-1">
+                    Bức Tâm Thư Ngày 20 Tháng 10
+                </h3>
+            </div>
+
+            <div class="overflow-y-auto pr-2 flex-1 space-y-4 text-sm sm:text-base leading-relaxed text-rose-50/95 font-light">
+                <p class="font-display text-lg sm:text-xl text-amber-200 italic">
+                    Thương gửi <span class="recipient-name-display font-semibold text-rose-300">Em Yêu</span>,
+                </p>
+
+                <div id="typewriterText" class="min-h-[160px] whitespace-pre-line leading-7 typing-cursor"></div>
+
+                <div class="pt-4 text-right border-t border-amber-200/15">
+                    <p class="text-xs text-amber-200/75 italic">Mãi yêu và trân trọng em,</p>
+                    <p class="font-script text-2xl sm:text-3xl text-rose-300 mt-1 sender-name-display">Anh của em</p>
+                </div>
+            </div>
+
+            <div class="mt-4 pt-3 flex items-center justify-between border-t border-amber-200/20">
+                
+            </div>
+        </div>
+    </div>
+
+    <!-- MODAL 3: CÁ NHÂN HÓA -->
+    <div id="settingsModal" class="fixed inset-0 z-50 hidden items-center justify-center p-4 bg-black/80 backdrop-blur-md">
+        <div class="glass-panel relative w-full max-w-md rounded-3xl p-6 sm:p-7 border border-amber-200/45">
+            <button id="closeSettingsModalBtn" class="cursor-pointer absolute top-4 right-4 w-8 h-8 rounded-full bg-rose-950/80 border border-amber-200/30 flex items-center justify-center text-amber-200 hover:bg-rose-800/70 transition">
+                ✕
+            </button>
+
+            <h3 class="font-display text-2xl font-bold gold-shimmer mb-1">
+                Cá Nhân Hóa Bó Hoa 20/10
+            </h3>
+            <p class="text-xs text-rose-200/75 mb-5">
+                Tùy chỉnh tên bạn gái, chữ ký và bức tâm thư để tạo đường link món quà 20/10 dành riêng cho cô ấy.
+            </p>
+
+            <div class="space-y-4 text-sm">
+                <div>
+                    <label class="block text-xs text-amber-200 mb-1.5">Tên gọi thân thương của bạn gái:</label>
+                    <input id="inputRecipientName" type="text" maxlength="40" placeholder="VD: Em Yêu, Bảo Ngọc..." 
+                           class="w-full px-3.5 py-2.5 rounded-xl bg-rose-950/65 border border-amber-200/30 text-white focus:outline-none focus:border-amber-300">
+                </div>
+
+                <div>
+                    <label class="block text-xs text-amber-200 mb-1.5">Tên của bạn (Người gửi):</label>
+                    <input id="inputSenderName" type="text" maxlength="40" placeholder="VD: Anh của em, Minh Quân..." 
+                           class="w-full px-3.5 py-2.5 rounded-xl bg-rose-950/65 border border-amber-200/30 text-white focus:outline-none focus:border-amber-300">
+                </div>
+
+                <div>
+                    <label class="block text-xs text-amber-200 mb-1.5">Nội dung Bức Tâm Thư 20/10:</label>
+                    <textarea id="inputCustomLetter" rows="4" placeholder="Nhập lời chúc chân thành từ trái tim bạn..." 
+                              class="w-full px-3.5 py-2.5 rounded-xl bg-rose-950/65 border border-amber-200/30 text-white text-xs sm:text-sm leading-relaxed focus:outline-none focus:border-amber-300"></textarea>
+                </div>
+            </div>
+
+            <div id="settingsToast" class="hidden mt-3 py-2 px-3 rounded-xl bg-emerald-950/85 border border-emerald-400/40 text-emerald-200 text-xs text-center">
+                Đã lưu thay đổi thành công!
+            </div>
+
+            <div class="mt-6 flex items-center justify-end gap-2.5">
+                <button id="copyGiftLinkBtn" class="px-4 py-2.5 rounded-full text-xs border border-amber-200/40 text-amber-100 hover:bg-rose-900/50 transition">
+                    🔗 Sao chép Link tặng nàng
+                </button>
+                <button id="saveSettingsBtn" class="btn-couture px-5 py-2.5 rounded-full text-xs sm:text-sm font-medium text-amber-50">
+                    Lưu Lại ✨
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const ROSE_PALETTES = {
+            redNaomi: {
+                name: "Red Naomi Velvet Rose",
+                deepCore: "#28010a",
+                innerDark: "#69031c",
+                midTone: "#b80934",
+                outerBright: "#e81e4d",
+                rimLight: "#ff8fa9",
+                glowColor: "rgba(255, 42, 95, 0.55)"
+            },
+            julietChampagne: {
+                name: "David Austin 'Juliet' Rose",
+                deepCore: "#8c2d38",
+                innerDark: "#d15a66",
+                midTone: "#f79d9c",
+                outerBright: "#ffd6cf",
+                rimLight: "#fff8f5",
+                glowColor: "rgba(255, 198, 178, 0.55)"
+            },
+            sweetAvalanche: {
+                name: "Sweet Avalanche Blush Rose",
+                deepCore: "#6e0d2f",
+                innerDark: "#b52456",
+                midTone: "#f0598a",
+                outerBright: "#ffabc4",
+                rimLight: "#fff0f5",
+                glowColor: "rgba(255, 130, 175, 0.55)"
+            }
+        };
+
+        const INTERACTIVE_ROSES = [
+            {
+                id: 0,
+                x: 350, y: 278, radius: 68,
+                paletteKey: "redNaomi",
+                style: "classicSpiral",
+                shortLabel: "1. Tình Yêu",
+                title: "Tình Yêu Dịu Dàng",
+                variety: "Đóa Hồng Chủ Đạo • Red Naomi Velvet",
+                message: "Đóa hồng chính là tình yêu sâu đậm anh dành cho em. Cảm ơn em đã bước vào cuộc đời anh, và biến mỗi khoảnh khắc bình dị đều trở thành kỷ niệm vô giá. Chúc em ngày 20/10 thật hạnh phúc!"
+            },
+            {
+                id: 1,
+                x: 256, y: 205, radius: 56,
+                paletteKey: "sweetAvalanche",
+                style: "cuppedRosette",
+                shortLabel: "2. Nụ Cười",
+                title: "Nụ Cười Tỏa Nắng",
+                variety: "Đóa Hồng Phấn • Sweet Avalanche",
+                message: "Với anh, khoảnh khắc đẹp nhất là khi nhìn thấy đôi mắt em ánh lên niềm vui và nụ cười trên môi. Chúc cô gái của anh không chỉ riêng ngày 20/10 mà suốt 365 ngày trong năm đều giữ được nụ cười trong trẻo, hồn nhiên."
+            },
+            {
+                id: 2,
+                x: 444, y: 205, radius: 56,
+                paletteKey: "julietChampagne",
+                style: "austinQuartered",
+                shortLabel: "3. Thanh Xuân",
+                title: "Thanh Xuân Rực Rỡ",
+                variety: "Đóa Hồng Anh Quốc • David Austin Juliet",
+                message: "Cảm ơn em vì đã dành những năm tháng thanh xuân tươi đẹp nhất để ở bên cạnh anh. Chúc em luôn rạng ngời như đóa hồng ban sớm, tự tin theo đuổi mọi ước mơ và mãi là nàng công chúa được anh yêu chiều."
+            },
+            {
+                id: 3,
+                x: 196, y: 302, radius: 55,
+                paletteKey: "julietChampagne",
+                style: "cuppedRosette",
+                shortLabel: "4. Bình Yên",
+                title: "Bình Yên Bên Nhau",
+                variety: "Đóa Hồng Champagne • Juliet Rose",
+                message: "Giữa thế giới rộng lớn ngoài kia, anh mong mình sẽ luôn là chốn bình yên dịu dàng nhất để em tựa vào. Chúc em mỗi tối đều ngủ thật ngon, mỗi sớm thức dậy đều thấy lòng nhẹ tênh vì biết luôn có anh ở bên."
+            },
+            {
+                id: 4,
+                x: 504, y: 302, radius: 55,
+                paletteKey: "sweetAvalanche",
+                style: "austinQuartered",
+                shortLabel: "5. Tự Hào",
+                title: "Niềm Tự Hào Của Anh",
+                variety: "Đóa Hồng Phấn • Sweet Avalanche",
+                message: "Anh luôn trân trọng sự dịu dàng, thông minh và trái tim ấm áp của em. Cảm ơn em vì đã luôn thấu hiểu, sẻ chia và đồng hành cùng anh. Trong mắt anh, em luôn là người tuyệt vời nhất."
+            },
+            {
+                id: 5,
+                x: 274, y: 368, radius: 58,
+                paletteKey: "redNaomi",
+                style: "classicSpiral",
+                shortLabel: "6. Hạnh Phúc",
+                title: "Hạnh Phúc Ngọt Ngào",
+                variety: "Đóa Hồng Đỏ Nhung • Red Naomi",
+                message: "Mong rằng mọi điều may mắn, ngọt ngào và tốt đẹp nhất trên đời sẽ luôn dịu dàng tìm đến với em mỗi ngày."
+            },
+            {
+                id: 6,
+                x: 426, y: 368, radius: 58,
+                paletteKey: "sweetAvalanche",
+                style: "classicSpiral",
+                shortLabel: "7. Lời Hứa",
+                title: "Lời Hứa Tương Lai",
+                variety: "Đóa Hồng Phấn • Sweet Avalanche",
+                message: "Bó hoa 20/10 này là lời hứa chân thành từ trái tim anh: Chúng mình sẽ cùng nhau nắm chặt tay đi qua thêm thật nhiều mùa hoa nở nữa, cùng xây dựng một tương lai trọn vẹn và yêu thương nhau nhiều hơn."
+            }
+        ];
+
+        const SECONDARY_ROSES = [
+            { x: 350, y: 152, radius: 44, paletteKey: "julietChampagne", style: "cuppedRosette" },
+            { x: 162, y: 222, radius: 38, paletteKey: "redNaomi", style: "classicSpiral" },
+            { x: 538, y: 222, radius: 38, paletteKey: "redNaomi", style: "classicSpiral" },
+            { x: 350, y: 405, radius: 45, paletteKey: "julietChampagne", style: "austinQuartered" }
+        ];
+
+        const defaultLoveLetter = `Hôm nay là ngày 20 tháng 10 — ngày tôn vinh những người phụ nữ tuyệt vời của Việt Nam,
+
+Anh gửi tặng em bó hoa hồng này cùng tất cả tình yêu thương của anh. Mỗi đóa hoa trong bó hoa đều cất giữ một lời cầu chúc chân thành anh dành cho em: luôn xinh đẹp, luôn mỉm cười, luôn bình yên và hạnh phúc.
+
+Cảm ơn em vì đã xuất hiện và làm cho thế giới của anh trở nên rực rỡ hơn biết bao. Chúc người yêu của anh một ngày 20/10 thật trọn vẹn và ngập tràn niềm vui nhé!`;
+
+        const appState = {
+            recipientName: "Em Yêu",
+            senderName: "Anh của em",
+            customLetter: defaultLoveLetter,
+            visitedRoses: new Set(),
+            currentWishIndex: 0,
+            hoveredRoseId: -1,
+            hoveredTag: false,
+            bouquetOpened: false
+        };
+
+        const roseSpriteCache = new Map();
+
+        function createSeededRandom(seed) {
+            let s = seed % 2147483647;
+            if (s <= 0) s += 2147483646;
+            return function () {
+                s = (s * 16807) % 2147483647;
+                return (s - 1) / 2147483646;
+            };
+        }
+
+        function paintBotanicalPetal(ctx, rDist, pWidth, pLength, angle, ratio, palette, rand, style) {
+            ctx.save();
+            ctx.rotate(angle);
+            ctx.translate(rDist, 0);
+
+            ctx.shadowColor = "rgba(18, 1, 7, 0.52)";
+            ctx.shadowBlur = 6 + ratio * 10;
+            ctx.shadowOffsetX = -2;
+            ctx.shadowOffsetY = 3;
+
+            const wave1 = (rand() - 0.5) * pWidth * 0.24;
+            const wave2 = (rand() - 0.5) * pWidth * 0.24;
+            const cupCurve = style === "austinQuartered" ? 0.72 : 0.88;
+
+            ctx.beginPath();
+            ctx.moveTo(0, 0);
+            ctx.bezierCurveTo(
+                pLength * 0.22, -pWidth * 0.92,
+                pLength * 0.78, -pWidth * (1.08 + wave1 * 0.01),
+                pLength * cupCurve, -pWidth * 0.36
+            );
+            ctx.bezierCurveTo(
+                pLength * (1.06 + (rand() - 0.5) * 0.06), -pWidth * 0.12 + wave1 * 0.2,
+                pLength * (1.06 + (rand() - 0.5) * 0.06), pWidth * 0.12 + wave2 * 0.2,
+                pLength * cupCurve, pWidth * 0.36
+            );
+            ctx.bezierCurveTo(
+                pLength * 0.78, pWidth * (1.08 + wave2 * 0.01),
+                pLength * 0.22, pWidth * 0.92,
+                0, 0
+            );
+            ctx.closePath();
+
+            const grad = ctx.createRadialGradient(
+                pLength * 0.15, 0, pLength * 0.05,
+                pLength * 0.58, 0, pLength * 1.05
+            );
+
+            if (ratio < 0.26) {
+                grad.addColorStop(0, palette.deepCore);
+                grad.addColorStop(0.55, palette.innerDark);
+                grad.addColorStop(0.92, palette.midTone);
+                grad.addColorStop(1, palette.outerBright);
+            } else if (ratio < 0.65) {
+                grad.addColorStop(0, palette.innerDark);
+                grad.addColorStop(0.45, palette.midTone);
+                grad.addColorStop(0.86, palette.outerBright);
+                grad.addColorStop(1, palette.rimLight);
+            } else {
+                grad.addColorStop(0, palette.innerDark);
+                grad.addColorStop(0.35, palette.midTone);
+                grad.addColorStop(0.82, palette.outerBright);
+                grad.addColorStop(1, palette.rimLight);
+            }
+
+            ctx.fillStyle = grad;
+            ctx.fill();
+
+            ctx.shadowColor = "transparent";
+
+            if (ratio > 0.3) {
+                ctx.strokeStyle = palette.rimLight;
+                ctx.globalAlpha = 0.12;
+                ctx.lineWidth = 0.7;
+                for (let v = -1; v <= 1; v++) {
+                    ctx.beginPath();
+                    ctx.moveTo(pLength * 0.2, 0);
+                    ctx.quadraticCurveTo(pLength * 0.6, v * pWidth * 0.32, pLength * 0.92, v * pWidth * 0.22);
+                    ctx.stroke();
+                }
+            }
+
+            ctx.globalAlpha = 0.32 + ratio * 0.35;
+            ctx.strokeStyle = palette.rimLight;
+            ctx.lineWidth = 0.8 + ratio * 0.9;
+            ctx.beginPath();
+            ctx.moveTo(pLength * 0.62, -pWidth * 0.65);
+            ctx.bezierCurveTo(
+                pLength * 1.04, -pWidth * 0.25,
+                pLength * 1.04, pWidth * 0.25,
+                pLength * 0.62, pWidth * 0.65
+            );
+            ctx.stroke();
+
+            ctx.restore();
+        }
+
+        function paintCrystalDewdrop(ctx, x, y, r) {
+            ctx.save();
+            ctx.translate(x, y);
+
+            ctx.beginPath();
+            ctx.arc(1.2, 1.8, r, 0, Math.PI * 2);
+            ctx.fillStyle = "rgba(20, 0, 8, 0.42)";
+            ctx.fill();
+
+            const dropGrad = ctx.createRadialGradient(-r * 0.3, -r * 0.3, r * 0.1, 0, 0, r);
+            dropGrad.addColorStop(0, "rgba(255, 255, 255, 0.95)");
+            dropGrad.addColorStop(0.35, "rgba(255, 235, 242, 0.45)");
+            dropGrad.addColorStop(0.75, "rgba(255, 180, 205, 0.18)");
+            dropGrad.addColorStop(1, "rgba(255, 255, 255, 0.65)");
+
+            ctx.beginPath();
+            ctx.arc(0, 0, r, 0, Math.PI * 2);
+            ctx.fillStyle = dropGrad;
+            ctx.fill();
+
+            ctx.beginPath();
+            ctx.arc(-r * 0.35, -r * 0.35, r * 0.28, 0, Math.PI * 2);
+            ctx.fillStyle = "#ffffff";
+            ctx.fill();
+
+            ctx.restore();
+        }
+
+        function generateRoseMasterSprite(cacheKey, radius, paletteKey, style, seed) {
+            if (roseSpriteCache.has(cacheKey)) {
+                return roseSpriteCache.get(cacheKey);
+            }
+
+            const dpr = Math.min(window.devicePixelRatio || 2, 2.5);
+            const pad = 28;
+            const size = (radius + pad) * 2;
+            const offCanvas = document.createElement('canvas');
+            offCanvas.width = size * dpr;
+            offCanvas.height = size * dpr;
+
+            const c = offCanvas.getContext('2d');
+            c.scale(dpr, dpr);
+            c.translate(size / 2, size / 2);
+
+            const palette = ROSE_PALETTES[paletteKey];
+            const rand = createSeededRandom(seed);
+
+            const baseShadow = c.createRadialGradient(0, 6, radius * 0.2, 0, 6, radius * 1.18);
+            baseShadow.addColorStop(0, "rgba(12, 1, 5, 0.65)");
+            baseShadow.addColorStop(0.65, "rgba(12, 1, 5, 0.32)");
+            baseShadow.addColorStop(1, "rgba(12, 1, 5, 0)");
+            c.fillStyle = baseShadow;
+            c.beginPath();
+            c.arc(0, 6, radius * 1.18, 0, Math.PI * 2);
+            c.fill();
+
+            for (let s = 0; s < 5; s++) {
+                const sAngle = s * ((Math.PI * 2) / 5) + rand() * 0.4;
+                c.save();
+                c.rotate(sAngle);
+                c.beginPath();
+                c.moveTo(0, -4);
+                c.quadraticCurveTo(radius * 0.75, -9, radius * 1.08, 0);
+                c.quadraticCurveTo(radius * 0.75, 9, 0, 4);
+                c.fillStyle = "#234f3b";
+                c.fill();
+                c.restore();
+            }
+
+            const totalPetals = 42;
+            const goldenAngle = 137.508 * (Math.PI / 180);
+
+            for (let i = totalPetals; i >= 1; i--) {
+                const ratio = i / totalPetals;
+                const angle = i * goldenAngle + (rand() - 0.5) * 0.14;
+                const rDist = Math.pow(ratio, 0.86) * (radius * 0.46);
+                const pLength = radius * (0.22 + 0.56 * Math.pow(ratio, 0.72));
+                const pWidth = pLength * (0.58 + 0.34 * Math.sin(ratio * Math.PI));
+
+                paintBotanicalPetal(c, rDist, pWidth, pLength, angle, ratio, palette, rand, style);
+            }
+
+            const coreGrad = c.createRadialGradient(0, 0, 1, 0, 0, radius * 0.24);
+            coreGrad.addColorStop(0, palette.deepCore);
+            coreGrad.addColorStop(0.7, palette.innerDark);
+            coreGrad.addColorStop(1, "transparent");
+            c.fillStyle = coreGrad;
+            c.beginPath();
+            c.arc(0, 0, radius * 0.24, 0, Math.PI * 2);
+            c.fill();
+
+            paintCrystalDewdrop(c, radius * 0.38, -radius * 0.25, 3.8);
+            paintCrystalDewdrop(c, -radius * 0.32, radius * 0.36, 3.1);
+
+            const spriteData = { canvas: offCanvas, size };
+            roseSpriteCache.set(cacheKey, spriteData);
+            return spriteData;
+        }
+
+        const masterCanvas = document.getElementById('bouquetMasterCanvas');
+        const mCtx = masterCanvas.getContext('2d');
+        const VIRTUAL_W = 700;
+        const VIRTUAL_H = 760;
+
+        function setupMasterCanvasResolution() {
+            const dpr = Math.min(window.devicePixelRatio || 2, 2.5);
+            masterCanvas.width = VIRTUAL_W * dpr;
+            masterCanvas.height = VIRTUAL_H * dpr;
+        }
+        setupMasterCanvasResolution();
+        window.addEventListener('resize', setupMasterCanvasResolution);
+
+        function drawEucalyptusBranch(ctx, startX, startY, endX, endY, ctrlX, ctrlY, leafCount, scale = 1) {
+            ctx.save();
+            ctx.beginPath();
+            ctx.moveTo(startX, startY);
+            ctx.quadraticCurveTo(ctrlX, ctrlY, endX, endY);
+            ctx.strokeStyle = "#3b5e52";
+            ctx.lineWidth = 2.4 * scale;
+            ctx.stroke();
+
+            for (let i = 1; i <= leafCount; i++) {
+                const t = i / (leafCount + 0.4);
+                const lx = (1 - t) * (1 - t) * startX + 2 * (1 - t) * t * ctrlX + t * t * endX;
+                const ly = (1 - t) * (1 - t) * startY + 2 * (1 - t) * t * ctrlY + t * t * endY;
+                const side = i % 2 === 0 ? 1 : -1;
+                const angle = Math.atan2(endY - startY, endX - startX) + side * 0.55;
+                const rx = (22 - i * 1.5) * scale;
+                const ry = (15 - i * 0.9) * scale;
+
+                ctx.save();
+                ctx.translate(lx, ly);
+                ctx.rotate(angle);
+
+                ctx.shadowColor = "rgba(10, 2, 6, 0.45)";
+                ctx.shadowBlur = 8;
+                ctx.shadowOffsetY = 3;
+
+                const leafGrad = ctx.createLinearGradient(-rx, -ry, rx, ry);
+                leafGrad.addColorStop(0, "#8ab8a8");
+                leafGrad.addColorStop(0.5, "#4c7a6b");
+                leafGrad.addColorStop(1, "#254239");
+
+                ctx.beginPath();
+                ctx.ellipse(rx * 0.65, 0, rx, ry, 0, 0, Math.PI * 2);
+                ctx.fillStyle = leafGrad;
+                ctx.fill();
+
+                ctx.shadowColor = "transparent";
+                ctx.strokeStyle = "rgba(210, 235, 225, 0.35)";
+                ctx.lineWidth = 0.8;
+                ctx.stroke();
+
+                ctx.beginPath();
+                ctx.moveTo(0, 0);
+                ctx.lineTo(rx * 1.4, 0);
+                ctx.strokeStyle = "rgba(210, 235, 225, 0.4)";
+                ctx.stroke();
+
+                ctx.restore();
+            }
+            ctx.restore();
+        }
+
+        function drawGypsophilaCluster(ctx, cx, cy, angle, scale = 1, time = 0) {
+            ctx.save();
+            ctx.translate(cx, cy);
+            ctx.rotate(angle);
+            ctx.scale(scale, scale);
+
+            const twigs = [
+                { x: -24, y: -38, r: 5.2 },
+                { x: 0, y: -52, r: 5.8 },
+                { x: 24, y: -36, r: 5.0 },
+                { x: -36, y: -18, r: 4.5 },
+                { x: 34, y: -16, r: 4.5 },
+                { x: -12, y: -26, r: 4.2 },
+                { x: 14, y: -24, r: 4.2 }
+            ];
+
+            ctx.strokeStyle = "rgba(163, 190, 160, 0.65)";
+            ctx.lineWidth = 1.1;
+            twigs.forEach(tw => {
+                ctx.beginPath();
+                ctx.moveTo(0, 0);
+                ctx.quadraticCurveTo(tw.x * 0.4, tw.y * 0.6, tw.x, tw.y);
+                ctx.stroke();
+            });
+
+            twigs.forEach((tw, idx) => {
+                ctx.save();
+                ctx.translate(tw.x, tw.y);
+                const pulse = 1 + Math.sin(time * 2.5 + idx) * 0.06;
+                ctx.scale(pulse, pulse);
+
+                ctx.shadowColor = "rgba(255, 240, 245, 0.65)";
+                ctx.shadowBlur = 6;
+
+                for (let p = 0; p < 5; p++) {
+                    const pa = (p * Math.PI * 2) / 5;
+                    ctx.beginPath();
+                    ctx.arc(Math.cos(pa) * (tw.r * 0.55), Math.sin(pa) * (tw.r * 0.55), tw.r * 0.52, 0, Math.PI * 2);
+                    ctx.fillStyle = "#fffafa";
+                    ctx.fill();
+                }
+
+                ctx.beginPath();
+                ctx.arc(0, 0, tw.r * 0.32, 0, Math.PI * 2);
+                ctx.fillStyle = "#f7d488";
+                ctx.fill();
+                ctx.restore();
+            });
+
+            ctx.restore();
+        }
+
+        function drawKoreanBackWrapping(ctx) {
+            ctx.save();
+            ctx.shadowColor = "rgba(5, 0, 3, 0.7)";
+            ctx.shadowBlur = 26;
+            ctx.shadowOffsetY = 12;
+
+            const centerWrapGrad = ctx.createLinearGradient(350, 75, 350, 520);
+            centerWrapGrad.addColorStop(0, "#4f0c24");
+            centerWrapGrad.addColorStop(0.55, "#2b0513");
+            centerWrapGrad.addColorStop(1, "#140208");
+
+            ctx.beginPath();
+            ctx.moveTo(350, 520);
+            ctx.lineTo(135, 240);
+            ctx.bezierCurveTo(125, 165, 185, 110, 248, 122);
+            ctx.quadraticCurveTo(300, 75, 350, 92);
+            ctx.quadraticCurveTo(400, 75, 452, 122);
+            ctx.bezierCurveTo(515, 110, 575, 165, 565, 240);
+            ctx.closePath();
+            ctx.fillStyle = centerWrapGrad;
+            ctx.fill();
+            ctx.strokeStyle = "rgba(253, 240, 188, 0.45)";
+            ctx.lineWidth = 1.6;
+            ctx.stroke();
+
+            const leftWingGrad = ctx.createLinearGradient(90, 150, 320, 480);
+            leftWingGrad.addColorStop(0, "#fff6f8");
+            leftWingGrad.addColorStop(0.5, "#ffdbe5");
+            leftWingGrad.addColorStop(1, "#d98a9e");
+
+            ctx.beginPath();
+            ctx.moveTo(335, 525);
+            ctx.lineTo(88, 275);
+            ctx.bezierCurveTo(72, 205, 118, 148, 182, 162);
+            ctx.lineTo(295, 118);
+            ctx.closePath();
+            ctx.fillStyle = leftWingGrad;
+            ctx.fill();
+            ctx.strokeStyle = "rgba(229, 184, 75, 0.6)";
+            ctx.lineWidth = 1.4;
+            ctx.stroke();
+
+            const rightWingGrad = ctx.createLinearGradient(610, 150, 380, 480);
+            rightWingGrad.addColorStop(0, "#fff6f8");
+            rightWingGrad.addColorStop(0.5, "#ffdbe5");
+            rightWingGrad.addColorStop(1, "#d98a9e");
+
+            ctx.beginPath();
+            ctx.moveTo(365, 525);
+            ctx.lineTo(612, 275);
+            ctx.bezierCurveTo(628, 205, 582, 148, 518, 162);
+            ctx.lineTo(405, 118);
+            ctx.closePath();
+            ctx.fillStyle = rightWingGrad;
+            ctx.fill();
+            ctx.strokeStyle = "rgba(229, 184, 75, 0.6)";
+            ctx.lineWidth = 1.4;
+            ctx.stroke();
+
+            ctx.restore();
+        }
+
+        function drawKoreanFrontWrappingAndRibbon(ctx, time) {
+            ctx.save();
+            const stems = [
+                { x1: 325, y1: 530, x2: 302, y2: 705, w: 7.5, c: "#183a2c" },
+                { x1: 340, y1: 530, x2: 332, y2: 718, w: 8.5, c: "#265440" },
+                { x1: 350, y1: 530, x2: 350, y2: 724, w: 9.0, c: "#1d4232" },
+                { x1: 360, y1: 530, x2: 368, y2: 718, w: 8.5, c: "#265440" },
+                { x1: 375, y1: 530, x2: 398, y2: 705, w: 7.5, c: "#183a2c" }
+            ];
+            stems.forEach(st => {
+                ctx.beginPath();
+                ctx.moveTo(st.x1, st.y1);
+                ctx.lineTo(st.x2, st.y2);
+                ctx.strokeStyle = st.c;
+                ctx.lineWidth = st.w;
+                ctx.lineCap = "round";
+                ctx.stroke();
+            });
+
+            ctx.shadowColor = "rgba(12, 1, 6, 0.55)";
+            ctx.shadowBlur = 18;
+            ctx.shadowOffsetY = 6;
+
+            const skirtBurgundy = ctx.createLinearGradient(350, 520, 350, 685);
+            skirtBurgundy.addColorStop(0, "#750d2c");
+            skirtBurgundy.addColorStop(1, "#290410");
+
+            ctx.beginPath();
+            ctx.moveTo(306, 525);
+            ctx.lineTo(242, 668);
+            ctx.quadraticCurveTo(350, 692, 458, 668);
+            ctx.lineTo(394, 525);
+            ctx.closePath();
+            ctx.fillStyle = skirtBurgundy;
+            ctx.fill();
+            ctx.strokeStyle = "rgba(253, 240, 188, 0.5)";
+            ctx.lineWidth = 1.5;
+            ctx.stroke();
+
+            const foldLeftGrad = ctx.createLinearGradient(110, 290, 385, 530);
+            foldLeftGrad.addColorStop(0, "#fff7f9");
+            foldLeftGrad.addColorStop(0.55, "#ffd1dc");
+            foldLeftGrad.addColorStop(1, "#cf768d");
+
+            ctx.beginPath();
+            ctx.moveTo(112, 295);
+            ctx.bezierCurveTo(165, 285, 255, 365, 350, 455);
+            ctx.lineTo(392, 532);
+            ctx.lineTo(306, 532);
+            ctx.lineTo(155, 382);
+            ctx.closePath();
+            ctx.fillStyle = foldLeftGrad;
+            ctx.fill();
+            ctx.strokeStyle = "rgba(229, 184, 75, 0.7)";
+            ctx.lineWidth = 1.6;
+            ctx.stroke();
+
+            const foldRightGrad = ctx.createLinearGradient(590, 290, 315, 530);
+            foldRightGrad.addColorStop(0, "#fff7f9");
+            foldRightGrad.addColorStop(0.55, "#ffc8d6");
+            foldRightGrad.addColorStop(1, "#c46880");
+
+            ctx.beginPath();
+            ctx.moveTo(588, 295);
+            ctx.bezierCurveTo(535, 285, 445, 365, 350, 455);
+            ctx.lineTo(308, 532);
+            ctx.lineTo(394, 532);
+            ctx.lineTo(545, 382);
+            ctx.closePath();
+            ctx.fillStyle = foldRightGrad;
+            ctx.fill();
+            ctx.strokeStyle = "rgba(229, 184, 75, 0.7)";
+            ctx.lineWidth = 1.6;
+            ctx.stroke();
+
+            const ribbonGrad = ctx.createLinearGradient(240, 500, 460, 580);
+            ribbonGrad.addColorStop(0, "#ff2a58");
+            ribbonGrad.addColorStop(0.45, "#b8002b");
+            ribbonGrad.addColorStop(1, "#590014");
+
+            ctx.beginPath();
+            ctx.roundRect(334, 515, 32, 28, 9);
+            ctx.fillStyle = ribbonGrad;
+            ctx.fill();
+            ctx.strokeStyle = "#fdf0bc";
+            ctx.lineWidth = 1.8;
+            ctx.stroke();
+
+            // Thẻ bài mạ vàng trên nơ
+            ctx.save();
+            ctx.translate(366, 536);
+            const tagSwing = Math.sin(time * 2.4) * 0.055 + (appState.hoveredTag ? 0.08 : 0);
+            ctx.rotate(tagSwing);
+
+            ctx.beginPath();
+            ctx.moveTo(0, 0);
+            ctx.lineTo(28, 18);
+            ctx.strokeStyle = "#fdf0bc";
+            ctx.lineWidth = 1.6;
+            ctx.stroke();
+
+            ctx.translate(28, 18);
+            ctx.rotate(0.18);
+            if (appState.hoveredTag) {
+                ctx.scale(1.08, 1.08);
+                ctx.shadowColor = "rgba(253, 240, 188, 0.85)";
+                ctx.shadowBlur = 20;
+            }
+
+            ctx.beginPath();
+            ctx.roundRect(0, 0, 96, 54, 8);
+            ctx.fillStyle = "#fff9f5";
+            ctx.fill();
+            ctx.strokeStyle = "#d4a137";
+            ctx.lineWidth = 2.2;
+            ctx.stroke();
+
+            ctx.fillStyle = "#9e0b32";
+            ctx.font = "700 16px 'Dancing Script', cursive";
+            ctx.textAlign = "center";
+            ctx.fillText("Gửi Em Yêu", 48, 24);
+
+            ctx.fillStyle = "#b8860b";
+            ctx.font = "700 9.5px 'Plus Jakarta Sans', sans-serif";
+            ctx.fillText("💌", 48, 41);
+
+            ctx.restore();
+            ctx.restore();
+        }
+
+        function renderBouquetMasterpiece(timestamp) {
+            const time = timestamp * 0.001;
+            const dpr = masterCanvas.width / VIRTUAL_W;
+
+            mCtx.save();
+            mCtx.setTransform(dpr, 0, 0, dpr, 0, 0);
+            mCtx.clearRect(0, 0, VIRTUAL_W, VIRTUAL_H);
+
+            const swayAngle = Math.sin(time * 1.15) * 0.014;
+            const swayY = Math.cos(time * 1.6) * 3.5;
+
+            mCtx.translate(VIRTUAL_W / 2, 620);
+            mCtx.rotate(swayAngle);
+            mCtx.translate(-VIRTUAL_W / 2, -620 + swayY);
+
+            drawKoreanBackWrapping(mCtx);
+            drawEucalyptusBranch(mCtx, 280, 280, 145, 112, 210, 185, 5, 1.0);
+            drawEucalyptusBranch(mCtx, 420, 280, 555, 112, 490, 185, 5, 1.0);
+            drawGypsophilaCluster(mCtx, 215, 158, -0.35, 1.05, time);
+            drawGypsophilaCluster(mCtx, 485, 158, 0.35, 1.05, time);
+
+            SECONDARY_ROSES.forEach((sr, idx) => {
+                const sprite = generateRoseMasterSprite(`sec_${idx}`, sr.radius, sr.paletteKey, sr.style, 200 + idx * 37);
+                mCtx.save();
+                mCtx.translate(sr.x, sr.y);
+                mCtx.drawImage(sprite.canvas, -sprite.size / 2, -sprite.size / 2, sprite.size, sprite.size);
+                mCtx.restore();
+            });
+
+            const drawOrder = [1, 2, 3, 4, 5, 6, 0];
+            drawOrder.forEach(roseId => {
+                const rose = INTERACTIVE_ROSES[roseId];
+                const sprite = generateRoseMasterSprite(
+                    `main_${rose.id}`,
+                    rose.radius,
+                    rose.paletteKey,
+                    rose.style,
+                    700 + rose.id * 91
+                );
+
+                const isHovered = appState.hoveredRoseId === rose.id;
+                const isVisited = appState.visitedRoses.has(rose.id);
+                const breathScale = (isHovered ? 1.11 : 1.0) + Math.sin(time * 2.1 + rose.id) * 0.012;
+
+                mCtx.save();
+                mCtx.translate(rose.x, rose.y);
+                mCtx.scale(breathScale, breathScale);
+
+                if (isHovered) {
+                    const pal = ROSE_PALETTES[rose.paletteKey];
+                    const hoverGlow = mCtx.createRadialGradient(0, 0, rose.radius * 0.3, 0, 0, rose.radius * 1.38);
+                    hoverGlow.addColorStop(0, pal.glowColor);
+                    hoverGlow.addColorStop(1, "transparent");
+                    mCtx.fillStyle = hoverGlow;
+                    mCtx.beginPath();
+                    mCtx.arc(0, 0, rose.radius * 1.38, 0, Math.PI * 2);
+                    mCtx.fill();
+                }
+
+                mCtx.drawImage(sprite.canvas, -sprite.size / 2, -sprite.size / 2, sprite.size, sprite.size);
+
+                const beaconAlpha = isVisited ? 0.38 : (0.55 + Math.sin(time * 3.4 + rose.id) * 0.35);
+                const beaconRadius = isVisited ? 4.2 : (5.5 + Math.sin(time * 3.4 + rose.id) * 1.4);
+
+                mCtx.beginPath();
+                mCtx.arc(0, 0, beaconRadius, 0, Math.PI * 2);
+                mCtx.fillStyle = isVisited ? "#fde68a" : "#ffffff";
+                mCtx.fill();
+                mCtx.strokeStyle = "#e5b84b";
+                mCtx.lineWidth = 1.5;
+                mCtx.stroke();
+
+                mCtx.restore();
+            });
+
+            drawGypsophilaCluster(mCtx, 212, 392, -0.25, 0.85, time);
+            drawGypsophilaCluster(mCtx, 488, 392, 0.25, 0.85, time);
+            drawKoreanFrontWrappingAndRibbon(mCtx, time);
+
+            mCtx.restore();
+            requestAnimationFrame(renderBouquetMasterpiece);
+        }
+
+        const tooltipEl = document.getElementById('roseHoverTooltip');
+        const tooltipText = document.getElementById('tooltipText');
+
+        function getVirtualCanvasCoords(clientX, clientY) {
+            const rect = masterCanvas.getBoundingClientRect();
+            const vx = ((clientX - rect.left) / rect.width) * VIRTUAL_W;
+            const vy = ((clientY - rect.top) / rect.height) * VIRTUAL_H;
+            return { vx, vy };
+        }
+
+        function detectHitTarget(vx, vy) {
+            if (vx >= 385 && vx <= 505 && vy >= 540 && vy <= 625) {
+                return { type: 'tag' };
+            }
+            const checkOrder = [0, 5, 6, 3, 4, 1, 2];
+            for (const id of checkOrder) {
+                const r = INTERACTIVE_ROSES[id];
+                const dist = Math.hypot(vx - r.x, vy - r.y);
+                if (dist <= r.radius * 0.92) {
+                    return { type: 'rose', rose: r };
+                }
+            }
+            return null;
+        }
+
+        masterCanvas.addEventListener('mousemove', (e) => {
+            const { vx, vy } = getVirtualCanvasCoords(e.clientX, e.clientY);
+            const hit = detectHitTarget(vx, vy);
+
+            if (hit && hit.type === 'rose') {
+                appState.hoveredRoseId = hit.rose.id;
+                appState.hoveredTag = false;
+                masterCanvas.style.cursor = 'pointer';
+
+                tooltipText.textContent = `${hit.rose.shortLabel}: ${hit.rose.title}`;
+                tooltipEl.style.left = `${e.clientX + 14}px`;
+                tooltipEl.style.top = `${e.clientY - 18}px`;
+                tooltipEl.classList.remove('opacity-0');
+            } else if (hit && hit.type === 'tag') {
+                appState.hoveredRoseId = -1;
+                appState.hoveredTag = true;
+                masterCanvas.style.cursor = 'pointer';
+
+                tooltipText.textContent = "💌";
+                tooltipEl.style.left = `${e.clientX + 14}px`;
+                tooltipEl.style.top = `${e.clientY - 18}px`;
+                tooltipEl.classList.remove('opacity-0');
+            } else {
+                appState.hoveredRoseId = -1;
+                appState.hoveredTag = false;
+                masterCanvas.style.cursor = 'default';
+                tooltipEl.classList.add('opacity-0');
+            }
+        });
+
+        masterCanvas.addEventListener('mouseleave', () => {
+            appState.hoveredRoseId = -1;
+            appState.hoveredTag = false;
+            tooltipEl.classList.add('opacity-0');
+        });
+
+        masterCanvas.addEventListener('click', (e) => {
+            const { vx, vy } = getVirtualCanvasCoords(e.clientX, e.clientY);
+            const hit = detectHitTarget(vx, vy);
+            spawnTouchBurst(e.clientX, e.clientY, 8);
+
+            if (hit && hit.type === 'rose') {
+                openWishCardModal(hit.rose.id);
+            } else if (hit && hit.type === 'tag') {
+                openLoveLetterModal();
+            }
+        });
+
+        class RomanticPianoBox {
+            constructor() {
+                this.ctx = null;
+                this.isPlaying = false;
+                this.timer = null;
+                this.noteIndex = 0;
+                this.score = [
+                    { f: 523.25, d: 0.65, bass: 261.63 },
+                    { f: 659.25, d: 0.65 },
+                    { f: 783.99, d: 0.65 },
+                    { f: 1046.50, d: 1.1 },
+                    { f: 987.77, d: 0.65, bass: 246.94 },
+                    { f: 783.99, d: 0.65 },
+                    { f: 659.25, d: 1.15 }
+                ];
+            }
+
+            initContext() {
+                if (!this.ctx) {
+                    const AudioCtx = window.AudioContext || window.webkitAudioContext;
+                    this.ctx = new AudioCtx();
+                }
+                if (this.ctx.state === 'suspended') {
+                    this.ctx.resume();
+                }
+            }
+
+            playTone(freq, duration = 1.4, volume = 0.07) {
+                if (!this.ctx) return;
+                const now = this.ctx.currentTime;
+                const osc = this.ctx.createOscillator();
+                const gain = this.ctx.createGain();
+
+                osc.type = 'sine';
+                osc.frequency.setValueAtTime(freq, now);
+
+                gain.gain.setValueAtTime(0.0005, now);
+                gain.gain.linearRampToValueAtTime(volume, now + 0.035);
+                gain.gain.exponentialRampToValueAtTime(0.0001, now + duration * 1.5);
+
+                osc.connect(gain);
+                gain.connect(this.ctx.destination);
+
+                osc.start(now);
+                osc.stop(now + duration * 1.6);
+            }
+
+            playSparkleChord() {
+                this.initContext();
+                const notes = [523.25, 659.25, 783.99, 1046.50];
+                notes.forEach((n, idx) => {
+                    setTimeout(() => this.playTone(n, 0.8, 0.045), idx * 60);
+                });
+            }
+
+            start() {
+                this.initContext();
+                if (this.isPlaying) return;
+                this.isPlaying = true;
+                this.stepLoop();
+                updateMusicButtonUI(true);
+            }
+
+            stop() {
+                this.isPlaying = false;
+                if (this.timer) {
+                    clearTimeout(this.timer);
+                    this.timer = null;
+                }
+                updateMusicButtonUI(false);
+            }
+
+            toggle() {
+                this.isPlaying ? this.stop() : this.start();
+            }
+
+            stepLoop() {
+                if (!this.isPlaying) return;
+                const item = this.score[this.noteIndex];
+                this.playTone(item.f, item.d * 1.5, 0.068);
+                if (item.bass) {
+                    this.playTone(item.bass, item.d * 2.1, 0.038);
+                }
+                this.noteIndex = (this.noteIndex + 1) % this.score.length;
+                this.timer = setTimeout(() => this.stepLoop(), item.d * 800);
+            }
+        }
+
+        const soundEngine = new RomanticPianoBox();
+
+        function updateMusicButtonUI(playing) {
+            document.getElementById('musicIcon').textContent = playing ? '🎵' : '🔇';
+            document.getElementById('musicStatusText').textContent = playing ? 'Giai Điệu: Bật' : 'Giai Điệu: Tắt';
+        }
+
+        const ambCanvas = document.getElementById('ambientCanvas');
+        const ambCtx = ambCanvas.getContext('2d');
+        let aw = window.innerWidth;
+        let ah = window.innerHeight;
+
+        const fireflies = [];
+        const fallingPetals = [];
+        const touchParticles = [];
+
+        function resizeAmbientCanvas() {
+            aw = window.innerWidth;
+            ah = window.innerHeight;
+            ambCanvas.width = aw;
+            ambCanvas.height = ah;
+        }
+        window.addEventListener('resize', resizeAmbientCanvas);
+        resizeAmbientCanvas();
+
+        for (let i = 0; i < 30; i++) {
+            fireflies.push({
+                x: Math.random() * aw,
+                y: Math.random() * ah,
+                r: Math.random() * 2 + 0.8,
+                vx: (Math.random() - 0.5) * 0.35,
+                vy: -Math.random() * 0.4 - 0.1,
+                phase: Math.random() * Math.PI * 2,
+                color: Math.random() > 0.35 ? '#fdf0bc' : '#ff9ebb'
+            });
+        }
+
+        for (let i = 0; i < 14; i++) {
+            fallingPetals.push({
+                x: Math.random() * aw,
+                y: Math.random() * ah,
+                size: Math.random() * 8 + 6,
+                vy: Math.random() * 0.72 + 0.32,
+                vx: (Math.random() - 0.5) * 0.42,
+                angle: Math.random() * Math.PI * 2,
+                spin: (Math.random() - 0.5) * 0.018,
+                sway: Math.random() * Math.PI * 2,
+                color: Math.random() > 0.45 ? '#d91448' : '#ff9ebb',
+                alpha: Math.random() * 0.45 + 0.25
+            });
+        }
+
+        function spawnTouchBurst(x, y, count = 5) {
+            for (let i = 0; i < count; i++) {
+                touchParticles.push({
+                    x: x + (Math.random() - 0.5) * 16,
+                    y: y + (Math.random() - 0.5) * 16,
+                    vx: (Math.random() - 0.5) * 2.6,
+                    vy: -Math.random() * 2.5 - 0.6,
+                    size: Math.random() * 6 + 4,
+                    life: 1,
+                    decay: Math.random() * 0.02 + 0.014,
+                    color: Math.random() > 0.45 ? '#ff4d79' : '#fdf0bc'
+                });
+            }
+        }
+
+        function triggerRomanticShower() {
+            for (let i = 0; i < 30; i++) {
+                setTimeout(() => {
+                    spawnTouchBurst(
+                        aw * 0.18 + Math.random() * aw * 0.64,
+                        ah * 0.68,
+                        2
+                    );
+                }, i * 40);
+            }
+        }
+
+        function renderAmbientLoop() {
+            ambCtx.clearRect(0, 0, aw, ah);
+
+            fireflies.forEach(f => {
+                f.x += f.vx;
+                f.y += f.vy;
+                f.phase += 0.035;
+                const alpha = 0.25 + Math.abs(Math.sin(f.phase)) * 0.7;
+
+                if (f.y < -10) f.y = ah + 10;
+                if (f.x < -10) f.x = aw + 10;
+                if (f.x > aw + 10) f.x = -10;
+
+                ambCtx.save();
+                ambCtx.beginPath();
+                ambCtx.arc(f.x, f.y, f.r, 0, Math.PI * 2);
+                ambCtx.fillStyle = f.color;
+                ambCtx.globalAlpha = alpha;
+                ambCtx.shadowColor = f.color;
+                ambCtx.shadowBlur = 10;
+                ambCtx.fill();
+                ambCtx.restore();
+            });
+
+            fallingPetals.forEach(p => {
+                p.sway += 0.02;
+                p.x += p.vx + Math.sin(p.sway) * 0.42;
+                p.y += p.vy;
+                p.angle += p.spin;
+
+                if (p.y > ah + 20) {
+                    p.y = -20;
+                    p.x = Math.random() * aw;
+                }
+
+                ambCtx.save();
+                ambCtx.translate(p.x, p.y);
+                ambCtx.rotate(p.angle);
+                ambCtx.globalAlpha = p.alpha;
+                ambCtx.beginPath();
+                ambCtx.moveTo(0, -p.size / 2);
+                ambCtx.bezierCurveTo(p.size / 1.3, -p.size / 2, p.size / 1.3, p.size / 2, 0, p.size / 2);
+                ambCtx.bezierCurveTo(-p.size / 1.3, p.size / 2, -p.size / 1.3, -p.size / 2, 0, -p.size / 2);
+                ambCtx.fillStyle = p.color;
+                ambCtx.fill();
+                ambCtx.restore();
+            });
+
+            for (let i = touchParticles.length - 1; i >= 0; i--) {
+                const b = touchParticles[i];
+                b.x += b.vx;
+                b.y += b.vy;
+                b.life -= b.decay;
+
+                if (b.life <= 0) {
+                    touchParticles.splice(i, 1);
+                    continue;
+                }
+
+                ambCtx.save();
+                ambCtx.beginPath();
+                ambCtx.arc(b.x, b.y, b.size * 0.35, 0, Math.PI * 2);
+                ambCtx.fillStyle = b.color;
+                ambCtx.globalAlpha = b.life;
+                ambCtx.fill();
+                ambCtx.restore();
+            }
+
+            requestAnimationFrame(renderAmbientLoop);
+        }
+
+        function buildQuickRoseBar() {
+            const container = document.getElementById('quickRoseBar');
+            container.innerHTML = '';
+            INTERACTIVE_ROSES.forEach(rose => {
+                const btn = document.createElement('button');
+                btn.className = "rose-quick-pill glass-pill px-3 py-1.5 rounded-full text-[11px] sm:text-xs text-amber-100/90 hover:border-amber-200 flex items-center gap-1.5 cursor-pointer";
+                btn.setAttribute('data-rose-pill', rose.id);
+                btn.innerHTML = `<span class="w-2 h-2 rounded-full" style="background:${ROSE_PALETTES[rose.paletteKey].outerBright}"></span><span>${rose.shortLabel}</span>`;
+                btn.addEventListener('click', () => openWishCardModal(rose.id));
+                container.appendChild(btn);
+            });
+        }
+
+        function drawMiniRosePreview(rose) {
+            const pCanvas = document.getElementById('miniRosePreviewCanvas');
+            const pCtx = pCanvas.getContext('2d');
+            pCtx.clearRect(0, 0, pCanvas.width, pCanvas.height);
+
+            const sprite = generateRoseMasterSprite(
+                `main_${rose.id}`,
+                rose.radius,
+                rose.paletteKey,
+                rose.style,
+                700 + rose.id * 91
+            );
+            pCtx.drawImage(sprite.canvas, 4, 4, 72, 72);
+        }
+
+        const wishModal = document.getElementById('wishModal');
+        const wishModalCard = document.getElementById('wishModalCard');
+
+        function openWishCardModal(index) {
+            const safeIdx = (index + INTERACTIVE_ROSES.length) % INTERACTIVE_ROSES.length;
+            appState.currentWishIndex = safeIdx;
+            appState.visitedRoses.add(safeIdx);
+
+            const rose = INTERACTIVE_ROSES[safeIdx];
+            drawMiniRosePreview(rose);
+
+            document.getElementById('wishModalVariety').textContent = rose.variety;
+            document.getElementById('wishModalTitle').textContent = rose.title;
+            document.getElementById('wishModalMessage').textContent = `"${rose.message}"`;
+
+            updateVisitedProgressUI();
+            soundEngine.playSparkleChord();
+
+            wishModal.classList.remove('hidden');
+            wishModal.classList.add('flex');
+            requestAnimationFrame(() => {
+                wishModal.classList.remove('opacity-0');
+                wishModalCard.classList.remove('scale-90');
+                wishModalCard.classList.add('scale-100');
+            });
+        }
+
+        function closeWishCardModal() {
+            wishModal.classList.add('opacity-0');
+            wishModalCard.classList.remove('scale-100');
+            wishModalCard.classList.add('scale-90');
+            setTimeout(() => {
+                wishModal.classList.add('hidden');
+                wishModal.classList.remove('flex');
+            }, 280);
+        }
+
+        function updateVisitedProgressUI() {
+            const count = appState.visitedRoses.size;
+            document.getElementById('wishProgressCounter').textContent = `Đã khám phá ${count}/7 đóa hồng lời chúc`;
+            document.getElementById('wishProgressIndicator').textContent = `${Math.round((count / 7) * 100)}%`;
+
+            appState.visitedRoses.forEach(id => {
+                const pill = document.querySelector(`[data-rose-pill="${id}"]`);
+                if (pill) pill.classList.add('visited');
+            });
+        }
+
+        const letterModal = document.getElementById('letterModal');
+        let typewriterTimer = null;
+
+        function startLetterTypewriter() {
+            const target = document.getElementById('typewriterText');
+            const content = appState.customLetter;
+            if (typewriterTimer) clearInterval(typewriterTimer);
+
+            target.textContent = '';
+            target.classList.add('typing-cursor');
+            let idx = 0;
+
+            typewriterTimer = setInterval(() => {
+                if (idx < content.length) {
+                    target.textContent += content.charAt(idx);
+                    idx++;
+                } else {
+                    clearInterval(typewriterTimer);
+                    target.classList.remove('typing-cursor');
+                }
+            }, 18);
+        }
+
+        function openLoveLetterModal() {
+            soundEngine.playSparkleChord();
+            letterModal.classList.remove('hidden');
+            letterModal.classList.add('flex');
+            requestAnimationFrame(() => {
+                letterModal.classList.remove('opacity-0');
+            });
+            startLetterTypewriter();
+        }
+
+        function closeLoveLetterModal() {
+            if (typewriterTimer) clearInterval(typewriterTimer);
+            letterModal.classList.add('opacity-0');
+            setTimeout(() => {
+                letterModal.classList.add('hidden');
+                letterModal.classList.remove('flex');
+            }, 280);
+        }
+
+        function loadPersonalization() {
+            try {
+                const params = new URLSearchParams(window.location.search);
+                const saved = JSON.parse(localStorage.getItem('coutureBouquet2010') || '{}');
+
+                appState.recipientName = params.get('to') || saved.recipientName || "Em Yêu";
+                appState.senderName = params.get('from') || saved.senderName || "Anh của em";
+                appState.customLetter = params.get('msg') || saved.customLetter || defaultLoveLetter;
+
+                applyPersonalizationToDOM();
+            } catch (e) {
+                console.warn(e);
+            }
+        }
+
+        function applyPersonalizationToDOM() {
+            document.querySelectorAll('.recipient-name-display').forEach(el => {
+                el.textContent = appState.recipientName;
+            });
+            document.querySelectorAll('.sender-name-display').forEach(el => {
+                el.textContent = appState.senderName;
+            });
+
+            document.getElementById('inputRecipientName').value = appState.recipientName;
+            document.getElementById('inputSenderName').value = appState.senderName;
+            document.getElementById('inputCustomLetter').value = appState.customLetter;
+        }
+
+        function drawIntroSealRose() {
+            const sealCanvas = document.getElementById('introSealCanvas');
+            const sCtx = sealCanvas.getContext('2d');
+            const sprite = generateRoseMasterSprite('intro_seal_rose', 38, 'redNaomi', 'classicSpiral', 999);
+            sCtx.clearRect(0, 0, 110, 110);
+            sCtx.drawImage(sprite.canvas, 6, 6, 98, 98);
+        }
+
+        window.onload = function () {
+            loadPersonalization();
+            buildQuickRoseBar();
+            drawIntroSealRose();
+
+            requestAnimationFrame(renderBouquetMasterpiece);
+            requestAnimationFrame(renderAmbientLoop);
+
+            document.getElementById('unveilBouquetBtn').addEventListener('click', () => {
+                const intro = document.getElementById('introOverlay');
+                const stage = document.getElementById('bouquetStageWrapper');
+
+                appState.bouquetOpened = true;
+                soundEngine.start();
+                soundEngine.playSparkleChord();
+                triggerRomanticShower();
+
+                intro.classList.add('opacity-0', 'pointer-events-none');
+                setTimeout(() => intro.classList.add('hidden'), 1000);
+
+                stage.classList.remove('stage-locked');
+                stage.classList.add('stage-unlocked');
+            });
+
+            // Gắn sự kiện đóng nút X thiệp đóa hoa
+            document.getElementById('closeWishModalBtn').addEventListener('click', closeWishCardModal);
+            document.getElementById('prevWishBtn').addEventListener('click', () => {
+                openWishCardModal(appState.currentWishIndex - 1);
+            });
+            document.getElementById('nextWishBtn').addEventListener('click', () => {
+                openWishCardModal(appState.currentWishIndex + 1);
+            });
+            document.getElementById('openLetterFromWishBtn').addEventListener('click', () => {
+                closeWishCardModal();
+                setTimeout(openLoveLetterModal, 300);
+            });
+
+            wishModal.addEventListener('click', (e) => {
+                if (e.target === wishModal) closeWishCardModal();
+            });
+
+            // Gắn sự kiện mở & đóng nút X Bức Tâm Thư
+            document.getElementById('openLetterBtn').addEventListener('click', openLoveLetterModal);
+            document.getElementById('closeLetterModalBtn').addEventListener('click', closeLoveLetterModal);
+            document.getElementById('replayLetterBtn').addEventListener('click', startLetterTypewriter);
+            document.getElementById('petalShowerBtn').addEventListener('click', () => {
+                soundEngine.playSparkleChord();
+                triggerRomanticShower();
+            });
+
+            letterModal.addEventListener('click', (e) => {
+                if (e.target === letterModal) closeLoveLetterModal();
+            });
+
+            // Âm thanh
+            document.getElementById('musicToggleBtn').addEventListener('click', () => {
+                soundEngine.toggle();
+            });
+
+            // Cá nhân hóa
+            const settingsModal = document.getElementById('settingsModal');
+            const settingsToast = document.getElementById('settingsToast');
+
+            document.getElementById('openSettingsBtn').addEventListener('click', () => {
+                settingsToast.classList.add('hidden');
+                settingsModal.classList.remove('hidden');
+                settingsModal.classList.add('flex');
+            });
+
+            document.getElementById('closeSettingsModalBtn').addEventListener('click', () => {
+                settingsModal.classList.add('hidden');
+                settingsModal.classList.remove('flex');
+            });
+
+            function saveUserCustomizations() {
+                const toVal = document.getElementById('inputRecipientName').value.trim() || "Em Yêu";
+                const fromVal = document.getElementById('inputSenderName').value.trim() || "Anh của em";
+                const msgVal = document.getElementById('inputCustomLetter').value.trim() || defaultLoveLetter;
+
+                appState.recipientName = toVal;
+                appState.senderName = fromVal;
+                appState.customLetter = msgVal;
+
+                try {
+                    localStorage.setItem('coutureBouquet2010', JSON.stringify({
+                        recipientName: toVal,
+                        senderName: fromVal,
+                        customLetter: msgVal
+                    }));
+                } catch (err) {}
+
+                applyPersonalizationToDOM();
+            }
+
+            document.getElementById('saveSettingsBtn').addEventListener('click', () => {
+                saveUserCustomizations();
+                soundEngine.playSparkleChord();
+                settingsToast.textContent = "Đã lưu thông tin thành công! ✨";
+                settingsToast.classList.remove('hidden');
+                setTimeout(() => {
+                    settingsModal.classList.add('hidden');
+                    settingsModal.classList.remove('flex');
+                }, 900);
+            });
+
+            document.getElementById('copyGiftLinkBtn').addEventListener('click', () => {
+                saveUserCustomizations();
+                const shareUrl = new URL(window.location.href.split('?')[0]);
+                shareUrl.searchParams.set('to', appState.recipientName);
+                shareUrl.searchParams.set('from', appState.senderName);
+                shareUrl.searchParams.set('msg', appState.customLetter);
+
+                const tempInput = document.createElement('textarea');
+                tempInput.value = shareUrl.toString();
+                document.body.appendChild(tempInput);
+                tempInput.select();
+                document.execCommand('copy');
+                document.body.removeChild(tempInput);
+
+                settingsToast.textContent = "Đã sao chép link quà tặng! 💐";
+                settingsToast.classList.remove('hidden');
+            });
+        };
+    </script>
+</body>
+</html>
